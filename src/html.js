@@ -37,6 +37,11 @@ export default function HTML(props) {
         ></meta>
         <meta charSet="utf-8"></meta>
         <meta property="twitter:card" content="summary_large_image"></meta>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: '</noscript>undefined<noscript>',
+          }}
+        ></noscript>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
